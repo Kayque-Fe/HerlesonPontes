@@ -1,0 +1,132 @@
+.side-selector {
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1001;
+
+}
+
+.element-side {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  color: var(--white);
+  font-size: var(--fs-2);
+  font-weight: bold;
+  color: white;
+  transition: width 0.5s ease-in-out,
+    font-size 0.5s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+
+    width: 75%;
+    font-size: var(--fs-3);
+
+  }
+
+  &.selected {
+
+    width: 100%;
+    font-size: var(--fs-3);
+
+  }
+
+  &.unselected {
+
+    width: 0;
+
+  }
+
+}
+
+.gaming-side {
+
+  background: url("/src/assets/images/gaming.jpg") rgba(255, 255, 0, 0.281);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+
+}
+
+.professional-side {
+
+  background: url("/src/assets/images/professional.jpg") rgba(0, 17, 255, 0.322);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+
+}
+
+.karate-side {
+
+  background: url("/src/assets/images/karate.jpg") rgba(255, 0, 0, 0.322);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+@media screen and (width < 768px) {
+
+  .side-selector {
+
+    flex-direction: column;
+
+    .element-side {
+
+      width: 100%;
+      transition: none;
+      transition: height 0.5s ease-in-out,
+        font-size 0.5s ease-in-out;
+      height: 50%;
+
+      &:hover {
+
+        height: 75%;
+        font-size: var(--fs-3);
+
+      }
+
+      &.selected {
+
+        height: 100%;
+        font-size: var(--fs-3);
+
+      }
+
+      &.unselected {
+
+        height: 0;
+
+      }
+
+    }
+
+  }
+
+}
+
+@keyframes animationFadeOut {
+
+  from {
+
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  to {
+
+    opacity: 0;
+    visibility: hidden;
+
+  }
+
+}

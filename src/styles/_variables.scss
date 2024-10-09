@@ -1,0 +1,77 @@
+:root {
+
+  // Fonts sizes
+  --fs-025: 0.25rem; // 4px
+  --fs-05: 0.5rem; // 8px
+  --fs-075: 0.75rem; // 12px
+  --fs-1: 1rem; // 16px
+  --fs-125: 1.25rem; // 20px
+  --fs-15: 1.5rem; // 24px
+  --fs-175: 1.75rem; // 28px
+  --fs-2: 2rem; // 32px
+  --fs-225: 2.25rem; // 36px
+  --fs-25: 2.5rem; // 40px
+  --fs-275: 2.75rem; // 44px
+  --fs-3: 3rem; // 48px
+
+  // General sizes
+  --sz-025: 0.25rem; // 4px
+  --sz-05: 0.5rem; // 8px
+  --sz-075: 0.75rem; // 12px
+  --sz-1: 1rem; // 16px
+  --sz-125: 1.25rem; // 20px
+  --sz-15: 1.5rem; // 24px
+  --sz-175: 1.75rem; // 28px
+  --sz-2: 2rem; // 32px
+  --sz-225: 2.25rem; // 36px
+  --sz-25: 2.5rem; // 40px
+  --sz-275: 2.75rem; // 44px
+  --sz-3: 3rem; // 48px
+
+  // Border radius sizes
+  --br-025: 0.25rem; // 4px
+  --br-05: 0.5rem; // 8px
+  --br-075: 0.75rem; // 12px
+  --br-1: 1rem; // 16px
+
+  --br-circle: 5rem;
+
+  // Media queries sizes
+  --scr-xs: 0px;
+  --scr-sm: 576px;
+  --scr-md: 768px;
+  --scr-lg: 992px;
+  --scr-xl: 1200px;
+  --scr-xxl: 1400px;
+
+  // Index sizes
+  --index-0: 0;
+  --index-1: 100;
+  --index-2: 200;
+  --index-3: 300;
+
+  // Transition values
+  --trans: 0.2s;
+
+  // Grid values
+  --grid-2: repeat(2, 1fr);
+  --grid-3: repeat(3, 1fr);
+  --grid-4: repeat(4, 1fr);
+  --grid-5: repeat(5, 1fr);
+
+  // Grid gap values
+  --grid-gap-025: 0.25rem;
+  --grid-gap-05: 0.5rem;
+  --grid-gap-1: 1rem;
+  --grid-gap-15: 1.5rem;
+  --grid-gap-2: 2rem;
+  --grid-gap-25: 2.5rem;
+
+  // Grid column values
+  --grid-wrap-1: 1;
+  --grid-wrap-2: 2;
+  --grid-wrap-3: 3;
+  --grid-wrap-4: 4;
+  --grid-wrap-5: 5;
+
+}
