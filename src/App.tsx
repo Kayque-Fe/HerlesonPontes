@@ -1,21 +1,33 @@
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import SideSelector from "./components/SideSelector/SideSelector";
-import IndexProfessional from "./projects/Professional";
+import Professional from "./projects/professional/app/Professional";
 
 function App() {
   const [selectedSide, setSelectedSide] = useState("none");
   console.log(selectedSide);
 
-  return (
+  const handleRender = () => (
     <div className="app">
       <SideSelector
         selectedSide={selectedSide}
         setSelectedSide={setSelectedSide}
       />
 
-      {selectedSide == "Professional" && <IndexProfessional />}
+      {selectedSide == "Professional" && <Professional />}
     </div>
+  );
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          Component={handleRender}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

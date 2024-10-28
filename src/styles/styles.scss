@@ -1,28 +1,4 @@
-@use './index';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-
-  font-style: italic;
-
-}
+@import "/node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 html,
 body {
@@ -34,10 +10,71 @@ body {
   height: 100%;
 }
 
+h1 {
+
+  font-size: var(--fs-h1);
+  color: var(--fc-h1);
+
+}
+
 h2 {
 
-  font-size: 2.5rem;
+  font-size: var(--fs-h2);
+  color: var(--fc-h2);
+  margin-bottom: 1rem;
   font-weight: 300;
-  margin: 1rem 0;
 
+}
+
+h5 {
+
+  font-weight: 600;
+  font-size: var(--fs-h5);
+  color: var(--fc-h5);
+  text-transform: uppercase;
+
+}
+
+.p-alt {
+
+  font-size: var(--fs-p-alt);
+  color: var(--fc-p-alt);
+
+}
+
+.p {
+
+  font-size: var(--fs-p);
+  color: var(--fc-p);
+
+}
+
+.btn-primary {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+}
+
+.btn-secondary {
+  @extend .btn-primary;
+  background-color: #122e48;
+  color: white;
+  border-color: #122e48;
 }

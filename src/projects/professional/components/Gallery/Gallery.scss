@@ -1,0 +1,159 @@
+.gallery {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary-color);
+  padding: 5rem 0 0 0;
+
+  .gallery-items {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 2rem;
+
+    .gallery-item {
+
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.5s ease;
+
+      &:hover {
+
+        img {
+
+          filter: brightness(0.5);
+
+        }
+
+        &::after {
+
+          content: "search";
+          font-family: 'Material Symbols Outlined';
+          font-weight: bold;
+          font-size: 5rem;
+          position: absolute;
+          height: 100px;
+          width: 100px;
+          inset: 0;
+          margin: auto;
+          z-index: 1000;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+
+      }
+
+      img {
+
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        user-select: none;
+        -webkit-user-drag: none;
+        transition: all 0.5s ease;
+        position: relative;
+
+      }
+
+    }
+
+  }
+
+}
+
+.dialog-container {
+
+  animation: fadeIn 0.5s ease;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  border-radius: 0.5rem;
+  animation: fadeIn 0.5s ease;
+
+  &[open] {
+    display: flex;
+  }
+
+}
+
+.dialog-content {
+
+  height: 100%;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.teste-image {
+
+  .image-gallery-slides {
+    display: none;
+  }
+
+}
+
+.thumbnail-bottom {
+
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  width: 100%;
+
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog-container::backdrop {
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.dialog-close {
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+
+    font-size: 3rem;
+    color: white;
+
+  }
+
+}

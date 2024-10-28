@@ -1,0 +1,64 @@
+.meet-professional {
+
+  height: auto;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #f5fafd;
+
+  p {
+
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: var(--fs-p-alt);
+    font-weight: 300;
+
+  }
+
+}
+
+.meet-professional-image {
+
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
+  z-index: -1;
+
+  img {
+
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    -webkit-user-drag: none;
+
+  }
+
+  img:nth-child(2) {
+
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+  }
+
+  img:nth-child(1),
+  img:last-child {
+
+    transform: translate(10%, 20%);
+
+  }
+
+  img:last-child {
+
+    transform: translate(-10%, 20%);
+
+  }
+
+}

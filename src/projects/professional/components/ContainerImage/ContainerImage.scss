@@ -1,0 +1,46 @@
+.container-image {
+
+  padding: 3rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-secondary-color);
+
+  .container-image-img {
+
+    object-fit: cover;
+    width: 40%;
+    height: 800px;
+    user-select: none;
+    -webkit-user-drag: none;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .container-image-content {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 10rem;
+
+    p {
+
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-secondary-color);
+
+    }
+
+    small {
+
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-secondary-color);
+      line-height: 1.5;
+
+    }
+
+  }
+
+}
